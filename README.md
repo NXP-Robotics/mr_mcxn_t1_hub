@@ -91,7 +91,7 @@ New in the current revision, bottom right corner (the photo shows the old revisi
   <img alt="Hub J1 VIN + T1 pinout" src="images/main-J1.svg" width="704" height="226">
 </picture>
 
-Pin 1 takes the battery, 3S to 12S (about 9 to 50 V), 10 W budget. An ideal diode (LM74700) blocks reverse polarity, a buck converter makes 5 V from it, and 3.3 V and 1.8 V come from the 5 V rail. The 5 V rail switches on above about 8 V. Pins 2 and 3 are the 100BASE-T1 pair, one twisted pair to the TJA1103 PHY. The PHY is the link slave (R41 fitted); remove R41 to make it the master. The other end of the T1 link must be the master. Mating parts from the schematic: socket 505570-0401, crimp 505572-1100, pre-crimped wires 217500-1125 (black) and 217500-2125 (red).
+Pin 1 takes the battery, 3S to 12S (about 9 to 60 V), 10 W budget. An ideal diode (LM74700) blocks reverse polarity, a buck converter makes 5 V from it, and 3.3 V and 1.8 V come from the 5 V rail. The 5 V rail switches on above about 8 V. Pins 2 and 3 are the 100BASE-T1 pair, one twisted pair to the TJA1103 PHY. The PHY is the link slave (R41 fitted); remove R41 to make it the master. The other end of the T1 link must be the master. Mating parts from the schematic: socket 505570-0401, crimp 505572-1100, pre-crimped wires 217500-1125 (black) and 217500-2125 (red).
 
 > [!CAUTION]
 > Pin 1 is the only power input besides USB. Keep the battery above 3S, the board does not start below about 8 V.
